@@ -1,15 +1,10 @@
+@mixin d-flex ($gab:0) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $gab;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@mixin padding-RL($top:0, $left:0, $bottom:0, $right:0) {
+    padding: $top $left $bottom $right;
+}

@@ -5,4 +5,6 @@
 @use "./components/components";
 
 // Import _pages.scss File which Store All pages Files like _homepage.scss & _about.scss
-@use "./pages/pages"
+@use "./pages/pages";
+
+@use "./layout/layout";

@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-family: "Cairo", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 ul {
@@ -74,7 +74,51 @@ a {
     max-width: 1320px;
   }
 }
-div {
-  background-color: beige;
-  padding-top: 50px;
+.header {
+  background-color: #18212d;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.header .nav .nav-bar {
+  display: none;
+  cursor: pointer;
+}
+.header .nav .nav-bar .bar1,
+.header .nav .nav-bar .bar2,
+.header .nav .nav-bar .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.header .nav .change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.header .nav .change .bar2 {
+  opacity: 0;
+}
+.header .nav .change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+.header .nav .logo img {
+  width: 60px;
+}
+.header .nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.header .nav ul a {
+  color: #fff;
+  text-transform: uppercase;
+}
+.header .nav .icons i {
+  color: #fff;
+  font-size: 20px;
 }/*# sourceMappingURL=main.css.map */
