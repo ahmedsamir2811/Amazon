@@ -81,7 +81,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   gap: 0;
+  padding: 10px 0 10px 0;
 }
 .header .nav .nav-bar {
   display: none;
@@ -106,19 +108,47 @@ a {
   transform: translate(0, -11px) rotate(45deg);
 }
 .header .nav .logo img {
-  width: 60px;
+  max-width: 120px;
 }
 .header .nav ul {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   gap: 40px;
+}
+.header .nav ul .active,
+.header .nav ul a:hover {
+  color: #f79c33;
 }
 .header .nav ul a {
   color: #fff;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.header .nav ul li .nav-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 10px;
+  z-index: 100;
+  padding: 10px 10px;
+  border: 2px red solid;
+}
+.header .nav ul li .nav-slide li {
   text-transform: uppercase;
 }
 .header .nav .icons i {
   color: #fff;
   font-size: 20px;
+}
+.header .nav .icons i:hover {
+  color: #f79c33;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

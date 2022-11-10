@@ -16,3 +16,11 @@ function myFunction(x) {   /* add argument (this) in html to add before calsslis
 // End Navbar 
 
 /*End Header*/
+
+
+
+// let url = 'https://fakestoreapi.com/products';
+
+// fetch('https://fakestoreapi.com/products')
+//             .then(res=>res.json())
+//             .then(json=>console.log(json))

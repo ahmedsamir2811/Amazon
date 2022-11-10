@@ -5,6 +5,7 @@
 
     .nav {
         @include d-flex;
+        @include padding-RL($top: 10px, $bottom: 10px);
 
         .nav-bar {
             display: none;
@@ -20,40 +21,71 @@
                 margin: 6px 0;
                 transition: 0.4s;
             }
-
         }
 
         .change .bar1 {
             transform: translate(0, 11px) rotate(-45deg);
-
         }
-        .change  .bar2 {
+
+        .change .bar2 {
             opacity: 0;
         }
 
-        .change   .bar3 {
+        .change .bar3 {
             transform: translate(0, -11px) rotate(45deg);
         }
 
         .logo {
             img {
-                width: 60px;
+                max-width: 120px;
             }
         }
 
         ul {
+            position: relative;
             @include d-flex(40px);
             
+            .active,
+            a:hover {
+                color: $second-color;
+            }
 
             a {
                 color: $font-text;
                 text-transform: uppercase;
+                padding: 20px 0;
             }
+
+            li .nav-slide{
+                @include d-flex(20px , flex-start ,  column);
+                position: absolute;
+                border-radius: 5px;
+                background-color: $font-text;
+                margin-top: 10px;
+                z-index: 100;
+                padding: 10px 10px;
+                border:2px red solid;
+                li{
+                    text-transform: uppercase;
+                }
+            }
+            // .linkes a:hover li .nav-slide{
+            //     @include d-flex(20px , flex-start ,  column);
+
+            // } 
         }
 
-        .icons  i {
+        .icons i{
             color: $font-text;
             font-size: 20px;
+            &:hover{
+                color: $second-color;
+                cursor: pointer;
+            }
         }
     }
 }
+
+// Start silder nav
+
+// End silder nav
