@@ -138,11 +138,15 @@ a {
   background-color: #fff;
   margin-top: 10px;
   z-index: 100;
-  padding: 10px 10px;
+  padding: 10px 10px 15px;
   border: 2px red solid;
 }
 .header .nav ul li .nav-slide li {
   text-transform: uppercase;
+  position: relative;
+}
+.header .nav ul li .nav-slide li a {
+  color: black;
 }
 .header .nav .icons i {
   color: #fff;

@@ -63,10 +63,14 @@
                 background-color: $font-text;
                 margin-top: 10px;
                 z-index: 100;
-                padding: 10px 10px;
+                padding: 10px 10px 15px ;
                 border:2px red solid;
                 li{
                     text-transform: uppercase;
+                    position: relative;
+                    a{
+                        color: black;
+                    }
                 }
             }
             // .linkes a:hover li .nav-slide{
@@ -89,3 +93,14 @@
 // Start silder nav
 
 // End silder nav
+
+// &::after{
+//     content:"";
+//     position:absolute;
+//     left:  0;
+//     width: 0;
+//     bottom: -5px;
+//     height: 2px;
+//     background-color: red;
+//     transition: 0.3s;
+// }
