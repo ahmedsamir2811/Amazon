@@ -7,16 +7,70 @@
         @include d-flex;
         @include padding-RL($top: 10px, $bottom: 10px);
 
-        .nav-bar {
+        .logo {
+            img {
+                max-width: 120px;
+                @include max-768 {
+                    max-width: 100px;
+                }
+                
+            }
+        }
+
+        .linkes {
+            @include max-768 {
+            @include d-flex (40px,center,column) ;
+            position: absolute;
+            left: 0;
+            // top: -200px;
+            top: -200px;
+            opacity: 0;
+            background-color: $main-color;
+            width: 100%;
+            height: 0px;
+            z-index: -1;
+            padding: 10px 0 30px;
+            transition: 0.3s;
+            &.navmenu{
+                top: 50px;
+                opacity: 1;
+                height: 250px;
+                transition: 0.3s;
+            }
+            }
+        }
+        ul {
+            position: relative;
+            @include d-flex(40px);
+            @include max-768 {
+                @include d-flex(30px);
+            }
+
+            .active,
+            a:hover {
+                color: $second-color;
+            }
+
+            a {
+                color: $font-text;
+                text-transform: uppercase;
+                padding: 20px 0;
+            }
+        }
+
+        .icons .nav-bar {
             display: none;
-            // display: inline-block;
             cursor: pointer;
+
+            @include max-768 {
+                display: block;
+            }
 
             .bar1,
             .bar2,
             .bar3 {
-                width: 35px;
-                height: 5px;
+                width: 25px;
+                height: 3.5px;
                 background-color: $font-text;
                 margin: 6px 0;
                 transition: 0.4s;
@@ -35,54 +89,11 @@
             transform: translate(0, -11px) rotate(45deg);
         }
 
-        .logo {
-            img {
-                max-width: 120px;
-            }
-        }
-
-        ul {
-            position: relative;
-            @include d-flex(40px);
-            
-            .active,
-            a:hover {
-                color: $second-color;
-            }
-
-            a {
-                color: $font-text;
-                text-transform: uppercase;
-                padding: 20px 0;
-            }
-
-            li .nav-slide{
-                @include d-flex(20px , flex-start ,  column);
-                position: absolute;
-                border-radius: 5px;
-                background-color: $font-text;
-                margin-top: 10px;
-                z-index: 100;
-                padding: 10px 10px 15px ;
-                border:2px red solid;
-                li{
-                    text-transform: uppercase;
-                    position: relative;
-                    a{
-                        color: black;
-                    }
-                }
-            }
-            // .linkes a:hover li .nav-slide{
-            //     @include d-flex(20px , flex-start ,  column);
-
-            // } 
-        }
-
-        .icons i{
+        i {
             color: $font-text;
             font-size: 20px;
-            &:hover{
+
+            &:hover {
                 color: $second-color;
                 cursor: pointer;
             }
@@ -93,14 +104,3 @@
 // Start silder nav
 
 // End silder nav
-
-// &::after{
-//     content:"";
-//     position:absolute;
-//     left:  0;
-//     width: 0;
-//     bottom: -5px;
-//     height: 2px;
-//     background-color: red;
-//     transition: 0.3s;
-// }

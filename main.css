@@ -85,15 +85,79 @@ a {
   gap: 0;
   padding: 10px 0 10px 0;
 }
-.header .nav .nav-bar {
+.header .nav .logo img {
+  max-width: 120px;
+}
+@media (max-width: 768px) {
+  .header .nav .logo img {
+    max-width: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .header .nav .linkes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+    left: 0;
+    top: -200px;
+    opacity: 0;
+    background-color: #18212d;
+    width: 100%;
+    height: 0px;
+    z-index: -1;
+    padding: 10px 0 30px;
+    transition: 0.3s;
+  }
+  .header .nav .linkes.navmenu {
+    top: 50px;
+    opacity: 1;
+    height: 250px;
+    transition: 0.3s;
+  }
+}
+.header .nav ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+}
+@media (max-width: 768px) {
+  .header .nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+.header .nav ul .active,
+.header .nav ul a:hover {
+  color: #f79c33;
+}
+.header .nav ul a {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.header .nav .icons .nav-bar {
   display: none;
   cursor: pointer;
 }
-.header .nav .nav-bar .bar1,
-.header .nav .nav-bar .bar2,
-.header .nav .nav-bar .bar3 {
-  width: 35px;
-  height: 5px;
+@media (max-width: 768px) {
+  .header .nav .icons .nav-bar {
+    display: block;
+  }
+}
+.header .nav .icons .nav-bar .bar1,
+.header .nav .icons .nav-bar .bar2,
+.header .nav .icons .nav-bar .bar3 {
+  width: 25px;
+  height: 3.5px;
   background-color: #fff;
   margin: 6px 0;
   transition: 0.4s;
@@ -107,52 +171,11 @@ a {
 .header .nav .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
-.header .nav .logo img {
-  max-width: 120px;
-}
-.header .nav ul {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  gap: 40px;
-}
-.header .nav ul .active,
-.header .nav ul a:hover {
-  color: #f79c33;
-}
-.header .nav ul a {
-  color: #fff;
-  text-transform: uppercase;
-  padding: 20px 0;
-}
-.header .nav ul li .nav-slide {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 20px;
-  position: absolute;
-  border-radius: 5px;
-  background-color: #fff;
-  margin-top: 10px;
-  z-index: 100;
-  padding: 10px 10px 15px;
-  border: 2px red solid;
-}
-.header .nav ul li .nav-slide li {
-  text-transform: uppercase;
-  position: relative;
-}
-.header .nav ul li .nav-slide li a {
-  color: black;
-}
-.header .nav .icons i {
+.header .nav i {
   color: #fff;
   font-size: 20px;
 }
-.header .nav .icons i:hover {
+.header .nav i:hover {
   color: #f79c33;
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

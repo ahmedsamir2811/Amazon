@@ -3,15 +3,35 @@
 // Strat Navbar 
 
 let navBar = document.getElementById('bar')   /* step -1 */
-function myFunction() {
-    navBar.classList.toggle("change");
-}
+
+// function myFunction() {
+//     navBar.classList.toggle("change");
+// }
 
   /* step -2 */
 
-function myFunction(x) {   /* add argument (this) in html to add before calsslist */
-    x.classList.toggle("change");
-}
+// function myFunction(x) {   /* add argument (this) in html to add before calsslist */
+//     x.classList.toggle("change");
+// }
+
+navBar.addEventListener('click', () => {
+    navBar.classList.toggle("change");
+})
+
+/* nav-menu */
+let linkes =  document.getElementById("linkes")
+navBar.addEventListener('click', () => {
+    linkes.classList.toggle("navmenu");
+})
+
+
+// const navMenu = () => {
+//     linkes.classList.toggle("navmenu");
+    
+// }
+
+/* nav-menu */
+
 
 // End Navbar 
 
