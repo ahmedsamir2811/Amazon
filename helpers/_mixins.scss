@@ -3,7 +3,7 @@
     $flex-direction: row,
     $justify-content:space-between ) {
     display: flex;
-    justify-content:  $justify-content;
+    justify-content:  $justify-content;  
     align-items: $align-items;
     flex-direction: $flex-direction;
     gap: $gab;
