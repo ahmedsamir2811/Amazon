@@ -1,21 +1,16 @@
 
-document.querySelectorAll
 // change the image in landing page  
 
 let mainImage = document.getElementById('main-image');
-// let smallImage = document.getElementsByClassName("small-image")
-let smallImage = document.querySelectorAll('.small-image');
-console.log(smallImage)
-// smallImage[0].onclick = function(){
-//     mainImage.src=smallImage[0].src;
-// }
-// smallImage[1].onclick = function(){
-//     mainImage.src=smallImage[1].src;
-// }
-// smallImage[2].onclick = function(){
-//     mainImage.src=smallImage[2].src;
-// }
 
+let smallImage = document.querySelectorAll('.small-image');
+
+smallImage.forEach(el => {
+    el.addEventListener('click', ()=>{
+        mainImage.src=el.src
+    })
+    
+});
 
 /*Start Header*/
 
