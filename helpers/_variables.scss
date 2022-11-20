@@ -1,16 +1,73 @@
-
 // all color
 
-$main-color:#18212d;
-$second-color:#f79c33;
-$font-text:#fff;
+$main-color: #1d1d1d;
+$second-color: #e69802;
+$font-text: #fff;
+$p-text: #d8d8d8;
+$btn: #4a4a4a2b;
+$hover: #7979792b;
 
 // media Query
 
-$phones-less:(max-width: 575.98px);
-$landscape-phones:(min-width: 576px) and (max-width: 767.98px);
-$tablets: (min-width: 768px) and (max-width: 991.98px);
-$desktops:(min-width: 992px) and (max-width: 1199.98px);
-$large-desktops:(min-width: 1200px);
+$phones-less: (
+    max-width: 575.98px
+);
+$landscape-phones: (
+    min-width: 576px) and (max-width: 767.98px
+);
+$tablets: (
+    min-width: 768px) and (max-width: 991.98px
+);
+$desktops: (
+    min-width: 992px) and (max-width: 1199.98px
+);
+$large-desktops: (
+    min-width: 1200px
+);
 
 
+
+//placeholder
+%main-button {
+    border: none;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: $second-color;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0%;
+        transform: translateX(0);
+        height: 100%;
+        background-color: rgba(247, 207, 4, 0.3);
+        transition: .5s;
+    }
+
+    &:hover {
+        padding: 10px 25px;
+
+        &::after {
+            width: 100%;
+
+        }
+
+        a {
+            color: black;
+        }
+    }
+
+    a {
+        color: $font-text;
+        position: relative;
+        z-index: 5;
+
+    }
+
+}
