@@ -127,6 +127,11 @@ a {
 .landing .slides .slide .container {
   margin-top: 50px;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .landing .slides .slide .container {
+    margin-top: 100px;
+  }
+}
 .landing .slides .slide .container .images {
   display: flex;
   justify-content: center;
@@ -145,6 +150,18 @@ a {
 .landing .slides .slide .container .images div:hover {
   transform: translateY(-10px);
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .landing .slides .slide .container .images div {
+    margin-top: 50px;
+    width: 7%;
+  }
+}
+@media (max-width: 768px) {
+  .landing .slides .slide .container .images div {
+    width: 10%;
+    margin-bottom: 20px;
+  }
+}
 .landing .slides .slide .container .images img {
   width: 100%;
 }
@@ -155,10 +172,24 @@ a {
   flex-direction: row;
   gap: 0;
 }
+@media (max-width: 768px) {
+  .landing .slides .slide .contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
 .landing .slides .slide .contain .text {
   color: #fff;
   text-align: center;
   max-width: 50%;
+}
+@media (max-width: 768px) {
+  .landing .slides .slide .contain .text {
+    max-width: 100%;
+  }
 }
 .landing .slides .slide .contain .text span {
   color: #e69802;
@@ -170,10 +201,27 @@ a {
   font-size: 15px;
   color: #d8d8d8;
 }
+@media (max-width: 768px) {
+  .landing .slides .slide .contain .text p {
+    padding-top: 10px;
+  }
+}
 .landing .slides .slide .contain .img {
   background-color: #e69802;
   border-radius: 36% 64% 44% 56%/46% 57% 43% 54%;
   width: 400px;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .landing .slides .slide .contain .img {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .landing .slides .slide .contain .img {
+    width: 250px;
+    border-radius: 50% 50% 41% 59%/52% 52% 48% 48%;
+    margin-bottom: 30px;
+  }
 }
 .landing .slides .slide .contain .img img {
   max-width: 100%;
@@ -215,6 +263,10 @@ a {
 .landing .slide-controls #next-btn:focus,
 .landing .slide-controls #prev-btn:focus {
   outline: none;
+}
+
+sc {
+  display: none;
 }
 
 .header {

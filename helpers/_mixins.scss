@@ -19,3 +19,18 @@
         @content;
     }
 }
+
+@mixin tablates {
+    @media (
+        min-width: 768px) and (max-width: 991.98px
+    ){
+        @content;
+    }
+}
+@mixin landscape-phones {
+    @media (
+        min-width: 576px) and (max-width: 767.98px
+    ){
+        @content;
+    }
+}

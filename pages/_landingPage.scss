@@ -13,8 +13,12 @@
         .slide {
             min-width: 100%;
             position: relative;
+            
             .container{
                 margin-top: 50px;
+                @include tablates{
+                    margin-top: 100px;
+                }
                 .images{
                     @include d-flex (20px,center,row , center) ;
                     div{
@@ -27,6 +31,14 @@
                         &:hover{
                             transform: translateY(-10px);
                         }
+                        @include tablates{
+                            margin-top: 50px;
+                            width: 7%;
+                        }
+                        @include max-768  {
+                            width: 10%;
+                            margin-bottom: 20px;
+                            }
                     }
                     img{
                         width: 100%;
@@ -37,10 +49,16 @@
             }
             .contain{
                 @include d-flex;
+                @include max-768  {
+                @include    d-flex ( 40px,center,column,space-between )
+                }
                 .text{
                     color: $font-text;
                     text-align: center;
                     max-width:50%;
+                    @include max-768 {
+                        max-width:100%;
+                        }
                     span{
                         color: $second-color;
                         font-size: 40px
@@ -50,6 +68,9 @@
                         line-height: 1.5;
                         font-size: 15px;
                         color: $p-text;
+                        @include max-768  {
+                            padding-top: 10px;
+                            }
                         
                     }
                     button{
@@ -60,6 +81,14 @@
                     background-color: $second-color;
                     border-radius:36% 64% 44% 56% / 46% 57% 43% 54% ; 
                     width: 400px;
+                    @include tablates{
+                        width: 300px;
+                    }
+                    @include max-768 {
+                        width: 250px;
+                        border-radius: 50% 50% 41% 59% / 52% 52% 48% 48% ;
+                        margin-bottom: 30px;
+                        }
                     img{
                     max-width: 100%;
                     }
@@ -108,5 +137,9 @@
             outline: none;
         }
     }
+}
+
+sc{
+    display: none;
 }
 
