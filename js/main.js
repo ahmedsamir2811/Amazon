@@ -1,4 +1,5 @@
 
+
 // change the image in landing page  
 
 let mainImage = document.getElementById('main-image');
