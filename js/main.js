@@ -106,7 +106,7 @@ slide.style.transform = `translateX(${-slideWidth * index}px)`;
 const startSlide = () => {
     slideId = setInterval(() => {
         moveToNextSlide();
-    }, 3000);
+    }, 5000);
 };
 
 const getSlides = () => document.querySelectorAll('.slide');

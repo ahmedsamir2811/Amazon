@@ -1,0 +1,25 @@
+@use "../helpers/index" as *;
+
+.categories {
+    margin-top: 10px;
+    background-color:$third-color;
+
+    .categorie {
+        @include d-flex(20px);
+        padding: 20px 0 10px 0;
+        .categorie-content {
+            display: block;
+            text-align: center;
+            .image {
+                img {
+                    max-width: 100%;
+                }
+            }
+            h3{
+                color: $font-text;
+                padding-top: 10px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

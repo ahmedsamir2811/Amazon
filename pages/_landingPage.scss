@@ -15,7 +15,7 @@
             position: relative;
 
             .container {
-                margin-top: 50px;
+                margin-top: 100px;
 
                 @include tablates {
                     margin-top: 100px;
@@ -23,7 +23,7 @@
 
                 .images {
                     @include d-flex (20px, center, row, center);
-
+                    margin-bottom: 30px;
                     div {
                         box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 1);
                         width: 5%;
@@ -127,6 +127,11 @@
 
                     img {
                         max-width: 100%;
+                        transition: 0.3s;
+                        &:hover{
+                            transform: scale(1.1) rotate(-10deg);
+                            cursor: pointer;
+                        }
                     }
                 }
 
