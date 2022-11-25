@@ -110,6 +110,10 @@ a {
     max-width: 1320px;
   }
 }
+.lastViewed {
+  margin-top: 20px;
+}
+
 .landing {
   min-height: calc(100vh - 54.5px);
   background-color: #1d1d1d;
