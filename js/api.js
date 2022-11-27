@@ -62,8 +62,8 @@ const url = 'https://api.escuelajs.co/api/v1/categories'
 async function get() {
     const res = await fetch(url)
     const data = await res.json();
-    console.log(data.slice(5))
-    data.slice(0,5).map(api => {
+    console.log(data)
+    data.slice(1,5).map(api => {
         printData(api)
     });
 }
@@ -86,6 +86,13 @@ get()
 
 
 
+const api = ' https://api.escuelajs.co/api/v1/products'
+
+fetch(api)
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+    })
 
 
 
