@@ -11,8 +11,10 @@
             display: block;
             text-align: center;
             .image {
+                overflow: hidden;
+                border: 2px red solid;
                 img {
-                    max-width: 100%;
+                max-width: 100%;
                 }
             }
             h3{

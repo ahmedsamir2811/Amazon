@@ -72,6 +72,22 @@ a {
   z-index: 5;
 }
 
+.lastViewed .arrows i {
+  box-shadow: 0px 0px 10px -3px rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  padding: 15px 15px;
+  color: #fff;
+  background-color: #343434;
+  transition: 0.5s;
+}
+.lastViewed .arrows i:hover {
+  background-color: rgba(63, 63, 63, 0.5254901961);
+  transform: translateX(-10px);
+}
+
 /*
   /// Tip:
   you Can make All Media Screens as a Variables 
@@ -119,16 +135,18 @@ a {
 }
 .lastViewed .arrows {
   position: absolute;
-  right: 8rem;
-  border: 2px red solid;
-  margin-bottom: 50px;
-}
-.lastViewed .arrows i:first-child {
-  margin-right: 20px;
+  top: 60%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
 }
 .lastViewed h3 {
   text-transform: capitalize;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
   padding-left: 10px;
 }
@@ -138,6 +156,8 @@ a {
   align-items: center;
   flex-direction: row;
   gap: 15px;
+  overflow: hidden;
+  position: relative;
 }
 .lastViewed .last-view .viewed-contain {
   text-align: center;
@@ -210,7 +230,7 @@ a {
 .landing .slides .slide .container .images div {
   box-shadow: 0px 0px 10px -5px rgb(0, 0, 0);
   width: 5%;
-  background-color: rgba(74, 74, 74, 0.168627451);
+  background-color: rgba(63, 63, 63, 0.5254901961);
   border-radius: 5px;
   cursor: pointer;
   transition: 0.5s;
@@ -340,12 +360,12 @@ a {
   padding: 10px 20px;
   color: #fff;
   position: relative;
-  background-color: rgba(74, 74, 74, 0.168627451);
+  background-color: rgba(63, 63, 63, 0.5254901961);
   transition: 0.5s;
 }
 .landing .slide-controls #next-btn:hover,
 .landing .slide-controls #prev-btn:hover {
-  background-color: rgba(121, 121, 121, 0.168627451);
+  background-color: rgba(82, 82, 82, 0.368627451);
   transform: translateX(-10px);
 }
 .landing .slide-controls #next-btn:focus,
@@ -372,6 +392,10 @@ sc {
 .categories .categorie .categorie-content {
   display: block;
   text-align: center;
+}
+.categories .categorie .categorie-content .image {
+  overflow: hidden;
+  border: 2px red solid;
 }
 .categories .categorie .categorie-content .image img {
   max-width: 100%;

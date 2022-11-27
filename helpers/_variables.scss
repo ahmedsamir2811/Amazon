@@ -5,8 +5,8 @@ $second-color: #e69802;
 $third-color: #343434;
 $font-text: #fff;
 $p-text: #d8d8d8;
-$btn: #4a4a4a2b;
-$hover: #7979792b;
+$btn: #3f3f3f86;
+$hover: #5252525e;
 
 // media Query
 
@@ -72,3 +72,21 @@ $large-desktops: (
     }
 
 }
+
+%main-arrows{
+            box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 1);
+            cursor: pointer;
+            font-size: 20px;
+            border: none;
+            border-radius: 50%;
+            padding: 15px 15px;
+            color: $font-text;
+            background-color: $third-color;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: $btn;
+                transform: translateX(-10px);
+
+            }
+        }

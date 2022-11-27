@@ -63,7 +63,7 @@ async function get() {
     const res = await fetch(url)
     const data = await res.json();
     console.log(data)
-    data.slice(1,5).map(api => {
+    data.map(api => {
         printData(api)
     });
 }
