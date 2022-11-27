@@ -90,3 +90,45 @@ $large-desktops: (
 
             }
         }
+
+
+        %main-buy {
+            border: none;
+            padding: 7px 15px;
+            border-radius: 10px;
+            background-color: $second-color;
+            position: relative;
+            overflow: hidden;
+            transition: 0.5s;
+            cursor: pointer;
+            color: $font-text;
+        
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 0%;
+                transform: translateX(0);
+                height: 100%;
+                background-color: rgba(247, 207, 4, 0.3);
+                transition: .5s;
+            }
+        
+            &:hover {
+                color: black;
+                padding: 7px 17px;
+                &::after {
+                    width: 100%;
+                }
+            }
+        
+            a {
+                color: $font-text;
+                position: relative;
+                z-index: 5;
+        
+            }
+        
+        }
+        
