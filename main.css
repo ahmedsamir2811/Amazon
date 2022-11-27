@@ -111,12 +111,8 @@ a {
   }
 }
 .lastViewed {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.lastViewed > h3 {
-  margin-bottom: 20px;
-  margin-left: 20px;
+  background-color: #1d1d1d;
+  color: #fff;
 }
 .lastViewed .last-view {
   display: flex;
