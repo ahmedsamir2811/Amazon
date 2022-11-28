@@ -2,32 +2,57 @@
 
 .delivers {
     margin: 20px 0;
-    background-color: #828282;
+    background-color: #343434;
     .container {
         .contain {
             @include d-flex;
             overflow: hidden;
-
+            padding: 10px 0 30px ;
             .text {
                 flex: 0 0 auto;
-                h6 {
-
+                color: $font-text;
+                @include max-992{
+                    text-align: center;
+                    max-width: 100%;
+                    margin: auto;
+                    }
+                h5{
+                    color: #aeaeae;
+                    padding-top: 20px;
+                    text-transform: capitalize;
                 }
                 h1{
-
+                    text-transform: uppercase ;
+                    color: $second-color;
+                    font-size: 60px;
+                    @include max-768{
+                        font-size: 40px;
+                    }
+                    @include max-555{
+                        font-size: 30px;
+                    }
+                    
                 }
                 p{
-
+                    min-width: 100%;
+                    line-height: 1.5;
+                    
                 }
                 button{
+                    margin-top: 20px;
+                    @extend %main-button;
+                    border: 2px solid black;
 
                 }
 
             }
             .image{
-                max-width: 350px;
+                @include max-992{
+                display: none;
+                }
+                max-width: 400px;
                 position: relative;
-                top: 50px;
+                top: 70px;
                 img{
                     max-width: 100%;
                 }
@@ -35,3 +60,5 @@
         }
     }
 }
+
+

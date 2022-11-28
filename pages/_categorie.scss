@@ -7,6 +7,9 @@
     .categorie {
         @include d-flex(20px);
         padding: 20px 0 10px 0;
+        @include max-555 {
+            flex-direction: column;
+        }
         .categorie-content {
             display: block;
             text-align: center;

@@ -13,9 +13,19 @@
     padding: $top $left $bottom $right;
 }
 
+@mixin max-555 {
+    @media(max-width:555px) {
+        @content;
+    }
+}
 
 @mixin max-768 {
     @media(max-width:768px) {
+        @content;
+    }
+}
+@mixin max-992 {
+    @media(max-width:992px) {
         @content;
     }
 }
