@@ -86,18 +86,6 @@ get()
 
 
 
-const api = ' https://api.escuelajs.co/api/v1/products'
-
-fetch(api)
-    .then(res => res.json())
-    .then(data => {
-        console.log(data)
-    })
-
-
-
-
-
 
 
 

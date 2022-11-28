@@ -10,6 +10,8 @@
         .categorie-content {
             display: block;
             text-align: center;
+            flex: 0 0 1;
+            width: 270px;
             .image {
                 overflow: hidden;
                 img {
