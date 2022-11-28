@@ -560,6 +560,9 @@ sc {
   max-width: 1445px;
 }
 .top-seller .arrows {
+  display: none;
+}
+.top-seller .arrow {
   position: absolute;
   transform: translateY(-50%);
   right: 50px;
@@ -571,15 +574,12 @@ sc {
   padding: 0 30px;
   z-index: 5;
 }
-.top-seller .arrows i {
-  font-size: 20px;
+.top-seller .arrow i {
+  font-size: 25px;
   cursor: pointer;
   transition: 0.3s;
 }
-.top-seller .arrows i:hover {
-  transform: translateX(-10px);
-}
-.top-seller .arrows i:hover:last-child {
+.top-seller .arrow i:hover {
   transform: translateX(10px);
 }
 .top-seller h3 {
