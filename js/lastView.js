@@ -22,11 +22,8 @@ fetch('https://api.escuelajs.co/api/v1/products')
     .then(res => res.json())
     .then(data => {
         console.log(data)
-        data.forEach(element => {
-            
-        });(el => {
+        data.slice(0,50).forEach(el => {
             LastViewedData(el)
-
         });
     })
 

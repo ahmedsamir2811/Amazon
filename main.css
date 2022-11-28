@@ -253,7 +253,7 @@ a {
 }
 .lastViewed .last-view .viewed-contain .text p {
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 15px;
   text-transform: capitalize;
 }
 .lastViewed .last-view .viewed-contain .text .buy {
@@ -475,6 +475,30 @@ sc {
   color: #fff;
   padding-top: 10px;
   text-transform: capitalize;
+}
+
+.delivers {
+  margin: 20px 0;
+  background-color: #828282;
+}
+.delivers .container .contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  overflow: hidden;
+}
+.delivers .container .contain .text {
+  flex: 0 0 auto;
+}
+.delivers .container .contain .image {
+  max-width: 350px;
+  position: relative;
+  top: 50px;
+}
+.delivers .container .contain .image img {
+  max-width: 100%;
 }
 
 .header {

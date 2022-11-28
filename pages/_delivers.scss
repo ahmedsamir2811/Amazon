@@ -1,0 +1,37 @@
+@use "../helpers/index" as *;
+
+.delivers {
+    margin: 20px 0;
+    background-color: #828282;
+    .container {
+        .contain {
+            @include d-flex;
+            overflow: hidden;
+
+            .text {
+                flex: 0 0 auto;
+                h6 {
+
+                }
+                h1{
+
+                }
+                p{
+
+                }
+                button{
+
+                }
+
+            }
+            .image{
+                max-width: 350px;
+                position: relative;
+                top: 50px;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
