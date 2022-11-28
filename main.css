@@ -452,6 +452,9 @@ sc {
   margin-top: 10px;
   background-color: #343434;
 }
+.categories .container {
+  max-width: 1445px;
+}
 .categories .categorie {
   display: flex;
   justify-content: space-between;
@@ -484,7 +487,7 @@ sc {
 }
 
 .delivers {
-  margin: 20px 0;
+  margin: 10px 0;
   background-color: #343434;
 }
 .delivers .container .contain {
@@ -564,7 +567,7 @@ sc {
 }
 .top-seller .arrow {
   position: absolute;
-  transform: translateY(-50%);
+  transform: translateY(-70%);
   right: 50px;
   width: 100%;
   display: flex;
@@ -613,10 +616,10 @@ sc {
   transition: 0.3s;
   cursor: pointer;
 }
-.top-seller .last-view .viewed-contain h6 {
+.top-seller .last-view .viewed-contain h5 {
   position: absolute;
-  left: 20px;
-  top: 25px;
+  left: 10px;
+  top: 15px;
   background-color: #e69802;
   padding: 5px 10px;
   border-radius: 7px;

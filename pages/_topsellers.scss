@@ -8,12 +8,12 @@
     .container{
         max-width: 1445px;
     }
-    .arrows{
-        display: none;
-    }
+.arrows{
+    display: none;
+}
     .arrow {
         position: absolute;
-        transform: translateY(-50%);
+        transform: translateY(-70%);
         right: 50px;
         width: 100%;
         display: flex;
@@ -63,10 +63,10 @@
             width: 270px;
             position: relative;
             transition: 0.3s;
-            h6{
+            h5{
                 position: absolute;
-                left: 20px;
-                top: 25px;
+                left: 10px;
+                top: 15px;
                 background-color: $second-color;
                 padding: 5px 10px;
                 border-radius: 7px;

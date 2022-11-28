@@ -4,6 +4,10 @@
     margin-top: 10px;
     background-color:$third-color;
 
+    .container{
+        max-width: 1445px;
+    }
+
     .categorie {
         @include d-flex(20px);
         padding: 20px 0 10px 0;
