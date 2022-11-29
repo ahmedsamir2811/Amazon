@@ -165,7 +165,7 @@ a {
 .lastViewed {
   background-color: #1d1d1d;
   color: #fff;
-  margin-top: 10px;
+  margin-top: 5px;
   position: relative;
 }
 .lastViewed .container {
@@ -448,8 +448,9 @@ sc {
 }
 
 .categories {
-  margin-top: 10px;
+  margin-top: 5px;
   background-color: #343434;
+  box-shadow: 0px 3px 33px 5px rgba(0, 0, 0, 0.75);
 }
 .categories .container {
   max-width: 1445px;
