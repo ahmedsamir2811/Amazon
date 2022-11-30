@@ -36,7 +36,7 @@ a {
   text-decoration: none;
 }
 
-.delivers .container .contain .text button, .landing .slides .slide .contain .text button {
+.announce .product .text button, .delivers .container .contain .text button, .landing .slides .slide .contain .text button {
   border: none;
   margin-top: 30px;
   padding: 10px 20px;
@@ -46,8 +46,9 @@ a {
   overflow: hidden;
   transition: 0.5s;
   text-transform: capitalize;
+  cursor: pointer;
 }
-.delivers .container .contain .text button::after, .landing .slides .slide .contain .text button::after {
+.announce .product .text button::after, .delivers .container .contain .text button::after, .landing .slides .slide .contain .text button::after {
   content: "";
   position: absolute;
   left: 0;
@@ -58,16 +59,16 @@ a {
   background-color: rgba(247, 207, 4, 0.3);
   transition: 0.5s;
 }
-.delivers .container .contain .text button:hover, .landing .slides .slide .contain .text button:hover {
+.announce .product .text button:hover, .delivers .container .contain .text button:hover, .landing .slides .slide .contain .text button:hover {
   padding: 10px 25px;
 }
-.delivers .container .contain .text button:hover::after, .landing .slides .slide .contain .text button:hover::after {
+.announce .product .text button:hover::after, .delivers .container .contain .text button:hover::after, .landing .slides .slide .contain .text button:hover::after {
   width: 100%;
 }
-.delivers .container .contain .text button:hover a, .landing .slides .slide .contain .text button:hover a {
+.announce .product .text button:hover a, .delivers .container .contain .text button:hover a, .landing .slides .slide .contain .text button:hover a {
   color: black;
 }
-.delivers .container .contain .text button a, .landing .slides .slide .contain .text button a {
+.announce .product .text button a, .delivers .container .contain .text button a, .landing .slides .slide .contain .text button a {
   color: #fff;
   position: relative;
   z-index: 5;
@@ -810,6 +811,47 @@ sc {
   flex-direction: row;
   gap: 0;
 }
+.announce {
+  margin: 5px 0;
+  padding: 10px 0;
+  background-color: #343434;
+  box-shadow: 0px 3px 33px 5px rgba(0, 0, 0, 0.75);
+}
+.announce .product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+.announce .product .text {
+  max-width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.announce .product .text h2 {
+  font-size: 40px;
+  color: #e69802;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.announce .product .text p {
+  max-width: 60%;
+  margin: 20px auto;
+  line-height: 20px;
+}
+.announce .product .image {
+  max-width: 250px;
+}
+.announce .product .image img {
+  max-width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.announce .product .image img:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
 .header {
   background-color: #1d1d1d;
   box-shadow: 0px 0px 10px 2px rgb(15, 15, 15);
@@ -934,4 +976,30 @@ sc {
 .header .nav i:hover {
   color: #e69802;
   cursor: pointer;
+}
+
+.footer {
+  background-color: #1d1d1d;
+}
+.footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  align-items: flex-start;
+}
+.footer ul {
+  padding: 40px 0;
+}
+.footer ul li {
+  text-transform: capitalize;
+  font-size: 15px;
+  color: rgb(201, 200, 200);
+  font-weight: 100;
+  padding: 0 0 5px;
+}
+.footer ul li:first-child {
+  font-size: 20px;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */

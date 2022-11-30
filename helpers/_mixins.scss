@@ -7,6 +7,7 @@
     align-items: $align-items;
     flex-direction: $flex-direction;
     gap: $gab;
+    
 }
 
 @mixin padding-RL($top: 0, $left: 0, $bottom: 0, $right: 0) {

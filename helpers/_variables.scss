@@ -39,6 +39,7 @@ $large-desktops: (
     overflow: hidden;
     transition: 0.5s;
     text-transform: capitalize;
+    cursor: pointer;
 
     &::after {
         content: "";
