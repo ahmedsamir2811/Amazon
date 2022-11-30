@@ -21,12 +21,21 @@
                 color: $second-color;
                 font-weight: 600;
                 text-transform: uppercase;
+                @include  max-992{
+                    font-size: 25px;
+                    font-weight: 500;
+                
+                }
             }
 
             p {
                 max-width: 60%;
                 margin: 20px auto;
                 line-height: 20px;
+                @include  max-992{
+                    max-width: 100%;
+                    font-size: 15px;
+                }
             }
 
             button {
@@ -36,6 +45,13 @@
 
         .image {
             max-width: 250px;
+            @include  max-992{
+            max-width: 200px;
+            margin-left: 30px;
+            @include max-555 {
+                display: none;
+            }
+            }
             img {
                 max-width: 100%;
                 cursor: pointer;

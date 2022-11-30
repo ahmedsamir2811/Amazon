@@ -14,7 +14,7 @@
 }
     .arrows{
         position: absolute;
-        transform: translateY(-70%);
+        transform: translateY(-120%);
         right: 50px;
         width: 100%;
         display: flex;
@@ -23,6 +23,9 @@
         align-items: center;
         padding: 0 30px;
         z-index: 5;
+        @include max-1285{
+            right:0;
+        }
 
         i {
             font-size: 25px;
