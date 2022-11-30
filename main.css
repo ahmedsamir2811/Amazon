@@ -89,7 +89,7 @@ a {
   transform: translateX(-10px);
 }
 
-.top-seller .last-view .viewed-contain .text .buy button, .lastViewed .last-view .viewed-contain .text .buy button {
+.must .last-view .viewed-contain .text .buy button, .top-seller .last-view .viewed-contain .text .buy button, .lastViewed .last-view .viewed-contain .text .buy button {
   border: none;
   padding: 7px 15px;
   border-radius: 10px;
@@ -100,7 +100,7 @@ a {
   cursor: pointer;
   color: #fff;
 }
-.top-seller .last-view .viewed-contain .text .buy button::after, .lastViewed .last-view .viewed-contain .text .buy button::after {
+.must .last-view .viewed-contain .text .buy button::after, .top-seller .last-view .viewed-contain .text .buy button::after, .lastViewed .last-view .viewed-contain .text .buy button::after {
   content: "";
   position: absolute;
   left: 0;
@@ -111,14 +111,14 @@ a {
   background-color: rgba(247, 207, 4, 0.3);
   transition: 0.5s;
 }
-.top-seller .last-view .viewed-contain .text .buy button:hover, .lastViewed .last-view .viewed-contain .text .buy button:hover {
+.must .last-view .viewed-contain .text .buy button:hover, .top-seller .last-view .viewed-contain .text .buy button:hover, .lastViewed .last-view .viewed-contain .text .buy button:hover {
   color: black;
   padding: 7px 17px;
 }
-.top-seller .last-view .viewed-contain .text .buy button:hover::after, .lastViewed .last-view .viewed-contain .text .buy button:hover::after {
+.must .last-view .viewed-contain .text .buy button:hover::after, .top-seller .last-view .viewed-contain .text .buy button:hover::after, .lastViewed .last-view .viewed-contain .text .buy button:hover::after {
   width: 100%;
 }
-.top-seller .last-view .viewed-contain .text .buy button a, .lastViewed .last-view .viewed-contain .text .buy button a {
+.must .last-view .viewed-contain .text .buy button a, .top-seller .last-view .viewed-contain .text .buy button a, .lastViewed .last-view .viewed-contain .text .buy button a {
   color: #fff;
   position: relative;
   z-index: 5;
@@ -491,6 +491,7 @@ sc {
   background-color: #343434;
   position: relative;
   z-index: 10;
+  margin: 5px 0;
 }
 .delivers .container .contain {
   display: flex;
@@ -557,7 +558,7 @@ sc {
 .top-seller {
   background-color: #1d1d1d;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   position: relative;
 }
 .top-seller .container {
@@ -585,6 +586,9 @@ sc {
 }
 .top-seller .arrow i:hover {
   transform: translateX(10px);
+}
+.top-seller .arrow i:hover:first-child {
+  transform: translateX(-10px);
 }
 .top-seller h3 {
   text-transform: capitalize;
@@ -668,6 +672,134 @@ sc {
   text-transform: capitalize;
 }
 .top-seller .last-view .viewed-contain .text .buy {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+.must {
+  box-shadow: 0px 3px 33px 5px rgba(0, 0, 0, 0.75);
+  background-color: #1d1d1d;
+  color: #fff;
+  margin-bottom: 5px;
+  position: relative;
+}
+.must .container {
+  max-width: 1445px;
+}
+.must .arrow {
+  display: none;
+}
+.must .arrows {
+  position: absolute;
+  transform: translateY(-70%);
+  right: 50px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 5;
+}
+.must .arrows i {
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.must .arrows i:hover {
+  transform: translateX(10px);
+}
+.must .arrows i:hover:first-child {
+  transform: translateX(-10px);
+}
+.must h3 {
+  text-transform: capitalize;
+  color: #e69802;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.must .last-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.must .last-view::-webkit-scrollbar {
+  display: none;
+}
+.must .last-view .viewed-contain {
+  box-shadow: 0px 0px 10px -3px rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px 0;
+  flex: 0 0 auto;
+  width: 270px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.must .last-view .viewed-contain h5 {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  background-color: #e69802;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+.must .last-view .viewed-contain::after {
+  content: "";
+  position: absolute;
+  background-color: #e69802;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  transition: 0.5s;
+}
+.must .last-view .viewed-contain::before {
+  content: "";
+  position: absolute;
+  background-color: #e69802;
+  top: 0;
+  right: 0;
+  height: 0;
+  width: 0;
+  transition: 0.5s;
+}
+.must .last-view .viewed-contain:hover {
+  transform: translateY(-10px);
+}
+.must .last-view .viewed-contain:hover::after {
+  height: 100%;
+  width: 2px;
+}
+.must .last-view .viewed-contain:hover::before {
+  height: 100%;
+  width: 2px;
+}
+.must .last-view .viewed-contain .image {
+  max-width: 100%;
+}
+.must .last-view .viewed-contain .image img {
+  width: 100%;
+}
+.must .last-view .viewed-contain .text p {
+  margin-top: 10px;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.must .last-view .viewed-contain .text .buy {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10px;

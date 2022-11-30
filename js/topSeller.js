@@ -8,6 +8,7 @@ topSeller.forEach((el, i) => {
     nxtButton[i].addEventListener('click', () => {
         el.scrollLeft += LastViewWidth;
     })
+
 })
 
 
@@ -18,7 +19,7 @@ fetch('https://api.escuelajs.co/api/v1/products')
     .then(res => res.json())
     .then(data => {
         console.log(data)
-        data.slice(100, 150).forEach(el => {
+        data.slice(150, 200).forEach(el => {
             AmazonTopSeller(el)
         });
     })
@@ -43,4 +44,10 @@ const AmazonTopSeller = (data) => {
     </div>
     `
 }
+
+fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=10')
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+    })
 

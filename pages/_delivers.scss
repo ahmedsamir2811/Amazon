@@ -5,6 +5,7 @@
     background-color: #343434;
     position: relative;
     z-index: 10;
+    margin: 5px 0;
     .container {
         .contain {
             @include d-flex;
