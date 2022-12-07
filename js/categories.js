@@ -63,7 +63,7 @@ async function get() {
     const res = await fetch(url)
     const data = await res.json();
     console.log(data)
-    data.map(api => {
+    data.slice(0,5).map(api => {
         printData(api)
     });
 }
@@ -82,8 +82,6 @@ const printData = (data) => {
 }
 get()
 // Start get categories
-
-
 
 
 

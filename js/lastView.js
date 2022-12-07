@@ -18,11 +18,11 @@ lastView.forEach((el, i) => {
 // use api of last viewed component
 
 
-fetch('https://api.escuelajs.co/api/v1/products')
+fetch('https://api.escuelajs.co/api/v1/products?offset=15&limit=35')
     .then(res => res.json())
     .then(data => {
         console.log(data)
-        data.slice(0,50).forEach(el => {
+        data.forEach(el => {
             LastViewedData(el)
         });
     })

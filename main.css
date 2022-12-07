@@ -462,7 +462,7 @@ sc {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  gap: 20px;
+  gap: 10px;
   padding: 20px 0 10px 0;
 }
 @media (max-width: 555px) {
@@ -481,6 +481,8 @@ sc {
 }
 .categories .categorie .categorie-content .image img {
   max-width: 100%;
+  width: 270px;
+  height: 180px;
 }
 .categories .categorie .categorie-content h3 {
   color: #fff;
@@ -492,7 +494,7 @@ sc {
   box-shadow: 0px 3px 33px 5px rgba(0, 0, 0, 0.75);
   background-color: #343434;
   position: relative;
-  z-index: 10;
+  z-index: 9;
   margin: 5px 0;
 }
 .delivers .container .contain {
@@ -976,6 +978,9 @@ sc {
   text-transform: uppercase;
   padding: 20px 0;
 }
+.header .nav .icons {
+  position: relative;
+}
 .header .nav .icons .nav-bar {
   display: none;
   cursor: pointer;
@@ -1010,6 +1015,130 @@ sc {
 .header .nav i:hover {
   color: #e69802;
   cursor: pointer;
+}
+
+.parent-of-form {
+  background-color: rgba(7, 7, 7, 0.573);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+.parent-of-form form {
+  margin: 30px auto;
+  border: 2px black solid;
+  background-color: white;
+  padding-top: 16px;
+  border-radius: 5px;
+  width: 35%;
+  transform: scale(0);
+  transition: all 0.6s;
+}
+@media (max-width: 1000px) {
+  .parent-of-form form {
+    width: 60%;
+  }
+}
+@media (max-width: 700px) {
+  .parent-of-form form {
+    width: 80%;
+  }
+}
+.parent-of-form form .form-container {
+  padding: 16px;
+}
+.parent-of-form form .form-container h2 {
+  margin-bottom: 30px;
+}
+.parent-of-form form .form-container #close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 22px;
+  opacity: 0.75;
+  transition: all 0.5s;
+}
+.parent-of-form form .form-container #close:hover {
+  transform: rotate(180deg);
+  font-size: 24px;
+  opacity: 1;
+  cursor: pointer;
+  font-weight: 600;
+}
+.parent-of-form form .form-container .box {
+  position: relative;
+}
+.parent-of-form form .form-container .box p {
+  font-size: 14px;
+  color: red;
+  display: none;
+}
+.parent-of-form form .form-container .box .icon-check-circle {
+  color: #04AA6D;
+  font-size: 20px;
+  position: absolute;
+  top: 37px;
+  right: 16px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.parent-of-form form .form-container .box input[type=text],
+.parent-of-form form .form-container .box input[type=password],
+.parent-of-form form .form-container .box input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+.parent-of-form form .form-container .box input[type=text]:focus,
+.parent-of-form form .form-container .box input[type=password]:focus,
+.parent-of-form form .form-container .box input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.parent-of-form form .form-container .box .error {
+  border: 2px solid red !important;
+}
+.parent-of-form form .form-container .box .success {
+  border: 2px solid #04AA6D !important;
+}
+.parent-of-form form .form-container .registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 21px 0 8px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
+}
+.parent-of-form form .form-container button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.parent-of-form form a {
+  color: dodgerblue;
+}
+.parent-of-form form .signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .footer {

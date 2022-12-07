@@ -15,11 +15,11 @@ topSeller.forEach((el, i) => {
 // use api of last viewed component
 
 
-fetch('https://api.escuelajs.co/api/v1/products')
+fetch('https://api.escuelajs.co/api/v1/products?offset=20&limit=20')
     .then(res => res.json())
     .then(data => {
         console.log(data)
-        data.slice(150, 200).forEach(el => {
+        data.forEach(el => {
             AmazonTopSeller(el)
         });
     })

@@ -1,9 +1,9 @@
 
-fetch('https://api.escuelajs.co/api/v1/products')
+fetch('https://api.escuelajs.co/api/v1/products?offset=40&limit=40')
     .then(res => res.json())
     .then(api=> {
         console.log(api)
-        api.slice(100,150).forEach(el => {
+        api.forEach(el => {
             alldata(el)
         });
     })
