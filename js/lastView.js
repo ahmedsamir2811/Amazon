@@ -40,7 +40,7 @@ const LastViewedData = (data) => {
             <p>${data.title}</p>
             <div class="buy">
                 <span class="price"> <span> $ </span>${data.price}</span>
-                <button>buy</button>
+                <button type="button" class="btn btn-warning">buy</button>
             </div>
         </div>
     </div>

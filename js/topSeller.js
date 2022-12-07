@@ -28,6 +28,7 @@ fetch('https://api.escuelajs.co/api/v1/products?offset=20&limit=20')
 
 const AmazonTopSeller = (data) => {
     const topsellers = document.getElementById('top-seller')
+
     topsellers.innerHTML += `
     <div class="viewed-contain">
         <h5>best seller</h5>
@@ -38,16 +39,20 @@ const AmazonTopSeller = (data) => {
             <p>${data.title}</p>
             <div class="buy">
                 <span class="price"> <span> $ </span>${data.price}</span>
-                <button>buy</button>
-            </div>
-        </div>
+                <button type="button" class="btn btn-warning">buy</button>
+
     </div>
     `
-}
+    const  allButt = document.querySelectorAll('.btn')
+    
+    allButt.forEach(item => {
+        item.addEventListener('click',(eo)=>{
+            item.setAttribute("disabled","")
+            item.classList.remove("btn-warning")
+            item.classList.add("btn-secondary")
+            item.innerHTML= "&#10004; Done"
+        })
+    });
 
-fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=10')
-    .then(res => res.json())
-    .then(data => {
-        console.log(data)
-    })
+}
 
