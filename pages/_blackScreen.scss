@@ -37,6 +37,9 @@
     text-transform: uppercase;
   }
   .item-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin: 30px;
     padding: 20px 0;
     .item-containe{

@@ -281,6 +281,9 @@ a {
   text-transform: uppercase;
 }
 .black-screen .item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin: 30px;
   padding: 20px 0;
 }
