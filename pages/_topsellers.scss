@@ -153,3 +153,18 @@
     }
 
 }
+
+
+.re-pop-up{
+    position: fixed;
+    right: 50%;
+    top: 30%;
+    transform: translatex(50%);
+    background-color: $second-color;
+    color: white;
+    padding: 10px;
+    z-index: 50;
+    border-radius: 10px;
+    transition: 1.5s;
+
+}

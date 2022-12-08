@@ -91,6 +91,14 @@ a {
   transform: translateX(-10px);
 }
 
+.parent-of-form {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 /*
   /// Tip:
   you Can make All Media Screens as a Variables 
@@ -238,6 +246,16 @@ a {
   border-radius: 10px;
   padding: 3px 12px;
   color: #fff;
+}
+
+.black-screen {
+  position: fixed;
+  top: 8%;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: red;
+  z-index: 50;
 }
 
 .landing {
@@ -668,6 +686,19 @@ sc {
   color: #fff;
 }
 
+.re-pop-up {
+  position: fixed;
+  right: 50%;
+  top: 30%;
+  transform: translatex(50%);
+  background-color: #e69802;
+  color: white;
+  padding: 10px;
+  z-index: 50;
+  border-radius: 10px;
+  transition: 1.5s;
+}
+
 .must {
   box-shadow: 0px 3px 33px 5px rgba(0, 0, 0, 0.75);
   background-color: #1d1d1d;
@@ -1005,11 +1036,6 @@ sc {
   display: none;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
   z-index: 10;
 }
 .parent-of-form form {

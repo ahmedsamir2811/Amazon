@@ -43,16 +43,36 @@ const AmazonTopSeller = (data) => {
 
     </div>
     `
+
     const  allButt = document.querySelectorAll('.btn')
-    
     allButt.forEach(item => {
         item.addEventListener('click',(eo)=>{
+
+        {         //change buy to done
+
             item.setAttribute("disabled","")
             item.classList.remove("btn-warning")
             item.classList.add("btn-secondary")
             item.innerHTML= "&#10004; Done"
+        }
+
+        {        // translate x  Buying succeeded
+            const popUP = document.createElement('div')
+            const body = document.getElementById('body')
+            body.append(popUP)
+            popUP.classList.add('re-pop-up')
+            popUP.innerHTML = 'Buying succeeded'
+            setTimeout(()=>{
+                popUP.style.transform='translateX(-100vw)'
+            },2000);
+            setTimeout(() => {
+                popUp.remove()
+            }, 1000);
+        }
+
+
         })
     });
 
-}
 
+}

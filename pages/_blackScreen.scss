@@ -1,0 +1,13 @@
+@use "../helpers/index" as *;
+
+
+.black-screen{
+  position: fixed;
+  top:8%;
+  right: 0;
+  bottom: 0 ;
+  width: 50%;
+  background-color: red;
+  z-index: 50;
+
+}
