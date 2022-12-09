@@ -27,8 +27,8 @@
 
 <body id="body">
 
-    <div class="black-screen">
-            <div class="closee"> &#10006; </div>
+    <div class="black-screen" id="black-screen">
+            <div class="closee" id="closee"> &#10006; </div>
             <h3>your cart</h3>
         
         
@@ -43,7 +43,7 @@
     
                     <div class="Items-content">
                         <h6 class="product-name">name of proudacts</h6>
-                        <span class="price">$ <span>4000</span></span>
+                        <span class="price">$ 4000</span>
                         <input type="number" value="1" min="1" class="input-quantity" id="input-quantity">
                     </div>
 
@@ -55,7 +55,10 @@
         </div>
         <hr style="height: 3px; color: black;">
         <div class="total">
-
+            <span>total</span>  $<span>4564</span>
+        </div>
+        <div class="buy-now">
+            <button type="button" class="btn btn-primary">Buy Now</button>
         </div>
         
 
@@ -137,7 +140,7 @@
                         <i id="createAccount" class="fa-solid fa-user"></i>
                     </li>
                     <li>
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i id="cart_shopping" class="fa-solid fa-cart-shopping"></i>
                     </li>
                 </ul>
             </div>

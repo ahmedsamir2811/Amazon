@@ -257,6 +257,8 @@ a {
   width: 30%;
   background-color: #343434;
   z-index: 50;
+  transform: translateX(150%);
+  transition: 0.7s;
 }
 .black-screen .closee {
   position: absolute;
@@ -329,6 +331,20 @@ a {
 }
 .black-screen .item-container .item-containe .fa-trash:active {
   font-size: 20px;
+}
+.black-screen .total {
+  font-size: 18px;
+  color: white;
+  text-align: end;
+  margin-right: 20px;
+}
+.black-screen .total span:first-child {
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+.black-screen .buy-now {
+  margin-top: 10px;
+  text-align: center;
 }
 
 .landing {

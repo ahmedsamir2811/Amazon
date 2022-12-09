@@ -2,7 +2,6 @@
 fetch('https://api.escuelajs.co/api/v1/products?offset=40&limit=40')
     .then(res => res.json())
     .then(api=> {
-        console.log(api)
         api.forEach(el => {
             alldata(el)
         });
@@ -18,7 +17,7 @@ const alldata = (data) => {
         <div class="text">
             <p>${data.title}</p>
             <div class="buy">
-                <span class="price"> <span> $ </span>${data.price}</span>
+                <span class="price"> $ ${data.price}</span>
                 <button type="button" class="btn btn-warning">buy</button>
             </div>
         </div>

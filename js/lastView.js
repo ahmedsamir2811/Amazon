@@ -21,7 +21,6 @@ lastView.forEach((el, i) => {
 fetch('https://api.escuelajs.co/api/v1/products?offset=15&limit=35')
     .then(res => res.json())
     .then(data => {
-        console.log(data)
         data.forEach(el => {
             LastViewedData(el)
         });
@@ -39,7 +38,7 @@ const LastViewedData = (data) => {
         <div class="text">
             <p>${data.title}</p>
             <div class="buy">
-                <span class="price"> <span> $ </span>${data.price}</span>
+                <span class="price"> $ ${data.price}</span>
                 <button type="button" class="btn btn-warning">buy</button>
             </div>
         </div>
