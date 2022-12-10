@@ -44,5 +44,6 @@ const LastViewedData = (data) => {
         </div>
     </div>
     `
+    store()
 }
 
