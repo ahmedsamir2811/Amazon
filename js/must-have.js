@@ -23,5 +23,4 @@ const alldata = (data) => {
         </div>
     </div>
         `
-        storetwo()
 }
