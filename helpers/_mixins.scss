@@ -14,6 +14,12 @@
     padding: $top $left $bottom $right;
 }
 
+@mixin max-455 {
+    @media(max-width:455px) {
+        @content;
+    }
+}
+
 @mixin max-555 {
     @media(max-width:555px) {
         @content;

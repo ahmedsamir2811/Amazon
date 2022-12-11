@@ -2,8 +2,8 @@
 
 // change the image in landing page  
 
-let mainImage = document.getElementById('main-image');
-
+{
+    let mainImage = document.getElementById('main-image');
 let smallImage = document.querySelectorAll('.small-image');
 
 smallImage.forEach(el => {
@@ -12,9 +12,11 @@ smallImage.forEach(el => {
     })
     
 });
+}
 
-let mainImag = document.getElementById('main-imag');
 
+{
+    let mainImag = document.getElementById('main-imag');
 let smallImag = document.querySelectorAll('.small-imag');
 
 smallImag.forEach(el => {
@@ -23,8 +25,11 @@ smallImag.forEach(el => {
     })
     
 });
-let mainIma = document.getElementById('main-ima');
 
+}
+
+{
+    let mainIma = document.getElementById('main-ima');
 let smallIma = document.querySelectorAll('.small-ima');
 
 smallIma.forEach(el => {
@@ -33,6 +38,7 @@ smallIma.forEach(el => {
     })
     
 });
+}
 
 
 /*Start Header*/

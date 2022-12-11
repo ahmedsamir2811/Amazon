@@ -51,7 +51,7 @@ email.addEventListener("keyup", (eo) => {
     activeReg()
 })
 
-// ali@gmail.com
+//EX: Email@gmail.com
 const pswMessage = document.getElementById('pswmessage')
 const psw = document.getElementById('psw')
 
@@ -75,7 +75,7 @@ psw.addEventListener("keyup", (eo) => {
 })
 
 
-// aaA888888@
+//EX: @Password 1354
 const pswRepeat = document.getElementById('pswrepeat') 
 const repeatMessage = document.getElementById('repeatmessage')
 

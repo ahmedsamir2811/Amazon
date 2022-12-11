@@ -5,7 +5,7 @@ fetch('https://api.escuelajs.co/api/v1/products?offset=40&limit=40')
         api.forEach(el => {
             alldata(el)
         });
-    })
+    }).catch(err=>console.log('Your Api Is Wrong'))
 
 const alldata = (data) => {
     const musthave = document.getElementById("must-for-you")
@@ -15,7 +15,7 @@ const alldata = (data) => {
             <img src="${data.images}" alt="">
         </div>
         <div class="text">
-            <p>${data.title}</p>
+            <p class="card-title">${data.title}</p>
             <div class="buy">
                 <span class="price"> $ ${data.price}</span>
                 <button type="button"  class="btnnn btn-warning">buy</button>
@@ -23,4 +23,5 @@ const alldata = (data) => {
         </div>
     </div>
         `
+        storeTwo()
 }

@@ -21,7 +21,7 @@ fetch('https://api.escuelajs.co/api/v1/products?offset=20&limit=20')
         data.forEach(el => {
             AmazonTopSeller(el)
         });
-    })
+    }).catch(err=>console.log('Your Api Is Wrong'))
 
 
 
@@ -35,7 +35,7 @@ const AmazonTopSeller = (data) => {
             <img src="${data.images}" alt="">
         </div>
         <div class="text">
-            <p>${data.title}</p>
+            <p class="card-title">${data.title}</p>
             <div class="buy">
                 <span class="price">  $ ${data.price}</span>
                 <button type="button"  class="btnn btn-warning">buy</button>
@@ -43,4 +43,5 @@ const AmazonTopSeller = (data) => {
     </div>
     
     `
+    storeOne()
 }
