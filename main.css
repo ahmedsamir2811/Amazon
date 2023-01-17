@@ -224,9 +224,10 @@ a {
   max-width: 100%;
 }
 .lastViewed .last-view .viewed-contain .image img {
-  width: 100%;
+  width: 270px;
+  height: 202.5px;
 }
-.lastViewed .last-view .viewed-contain .text p {
+.lastViewed .last-view .viewed-contain .text h2 {
   margin-top: 10px;
   font-size: 15px;
   text-transform: capitalize;
@@ -769,9 +770,10 @@ sc {
   max-width: 100%;
 }
 .top-seller .last-view .top-sell .image img {
-  width: 100%;
+  width: 270px;
+  height: 202.5px;
 }
-.top-seller .last-view .top-sell .text p {
+.top-seller .last-view .top-sell .text h2 {
   margin-top: 10px;
   font-size: 15px;
   text-transform: capitalize;
@@ -921,9 +923,10 @@ sc {
   max-width: 100%;
 }
 .must .last-view .must-for-you .image img {
-  width: 100%;
+  width: 270px;
+  height: 202.5px;
 }
-.must .last-view .must-for-you .text p {
+.must .last-view .must-for-you .text h2 {
   margin-top: 10px;
   font-size: 15px;
   text-transform: capitalize;
@@ -1007,6 +1010,99 @@ sc {
 }
 .announce .product .image img:hover {
   transform: scale(1.1) rotate(10deg);
+}
+
+.also-like {
+  background-color: #1d1d1d;
+  margin-bottom: 5px;
+  box-shadow: 0px 3px 33px 5px rgba(0, 0, 0, 0.75);
+}
+.also-like .last-View {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.also-like .last-View::-webkit-scrollbar {
+  display: none;
+}
+.also-like .last-View .viewed-contain {
+  box-shadow: 0px 0px 10px -3px rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px 0;
+  flex: 0 0 auto;
+  width: 270px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.also-like .last-View .viewed-contain::after {
+  content: "";
+  position: absolute;
+  background-color: #e69802;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  transition: 0.5s;
+}
+.also-like .last-View .viewed-contain::before {
+  content: "";
+  position: absolute;
+  background-color: #e69802;
+  top: 0;
+  right: 0;
+  height: 0;
+  width: 0;
+  transition: 0.5s;
+}
+.also-like .last-View .viewed-contain:hover {
+  transform: translateY(-10px);
+}
+.also-like .last-View .viewed-contain:hover::after {
+  height: 100%;
+  width: 2px;
+}
+.also-like .last-View .viewed-contain:hover::before {
+  height: 100%;
+  width: 2px;
+}
+.also-like .last-View .viewed-contain .image {
+  max-width: 100%;
+}
+.also-like .last-View .viewed-contain .image img {
+  width: 270px;
+  height: 202.5px;
+}
+.also-like .last-View .viewed-contain .text h2 {
+  margin-top: 10px;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #fff;
+}
+.also-like .last-View .viewed-contain .text .buy {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+.also-like .last-View .viewed-contain .text .buy .price {
+  color: #fff;
+}
+.also-like .last-View .viewed-contain .text .buy button {
+  border-radius: 10px;
+  padding: 3px 12px;
+  color: #fff;
 }
 
 .header {

@@ -36,7 +36,7 @@ const LastViewedData = (data) => {
             <img src="${data.images}" alt="">
         </div>
         <div class="text">
-            <p class="card-title">${data.title}</p>
+            <h2 class="card-title">${data.title}</h2>
             <div class="buy">
                 <span class="price"> $ ${data.price}</span>
                 <button type="button" class="btn btn-warning">buy</button>

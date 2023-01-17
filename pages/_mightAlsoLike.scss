@@ -1,43 +1,12 @@
 @use "../helpers/index" as *;
 
-.lastViewed {
+
+.also-like{
     background-color: $main-color;
-    color: $font-text;
-    margin-top: 5px;
-    // margin-bottom: 10px;
-    position: relative;
-    .container{
-        max-width: 1445px;
-    }
-    .arrows {
-        position: absolute;
-        top: 55%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 30px;
-        z-index: 5;
-        
+    margin-bottom: 5px;
+    box-shadow: 0px 3px 33px 5px rgba(0,0,0,0.75);
 
-        i {
-            @extend %main-arrows;
-        }
-
-    }
-    h3 {
-        text-transform: capitalize;
-        color: $second-color;
-        padding: {
-            top: 20px;
-            bottom: 10px;
-            left: 10px;
-        }
-    }
-
-    .last-view {
+    .last-View {
         @include d-flex(15px);
         overflow-x: auto;
         scroll-behavior: smooth;
@@ -104,6 +73,7 @@
                     margin-top: 10px;
                     font-size: 15px;
                     text-transform: capitalize;
+                    color: $font-text;
 
                 }
 
@@ -116,6 +86,9 @@
                     }
 
                     @include d-flex;
+                    .price{
+                        color: $font-text;
+                    }
 
                     button {
                         

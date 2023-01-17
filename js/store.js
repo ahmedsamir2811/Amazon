@@ -88,7 +88,7 @@ const store = () => {
     
     const card = item.parentElement.parentElement.parentElement
     const cardImageSrc = card.getElementsByTagName("img")[0].getAttribute("src")
-    const itemName = card.getElementsByTagName("p")[0].innerText
+    const itemName = card.getElementsByTagName("h2")[0].innerText
     const itemPrice = card.getElementsByTagName("span")[0].innerText
 
 
@@ -228,7 +228,7 @@ const storeOne = () => {
     
     const card = item.parentElement.parentElement.parentElement
     const cardImageSrc = card.getElementsByTagName("img")[0].getAttribute("src")
-    const itemName = card.getElementsByTagName("p")[0].innerText
+    const itemName = card.getElementsByTagName("h2")[0].innerText
     const itemPrice = card.getElementsByTagName("span")[0].innerText
 
 
@@ -368,7 +368,7 @@ const storeTwo = () => {
     
     const card = item.parentElement.parentElement.parentElement
     const cardImageSrc = card.getElementsByTagName("img")[0].getAttribute("src")
-    const itemName = card.getElementsByTagName("p")[0].innerText
+    const itemName = card.getElementsByTagName("h2")[0].innerText
     const itemPrice = card.getElementsByTagName("span")[0].innerText
 
 
