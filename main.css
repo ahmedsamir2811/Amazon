@@ -1054,7 +1054,7 @@ sc {
 .also-like .alsoLike::-webkit-scrollbar {
   display: none;
 }
-.also-like .alsoLike .contain {
+.also-like .alsoLike .also-contain {
   box-shadow: 0px 0px 10px -3px rgb(0, 0, 0);
   text-align: center;
   border-radius: 5px;
@@ -1066,7 +1066,7 @@ sc {
   transition: 0.3s;
   cursor: pointer;
 }
-.also-like .alsoLike .contain::after {
+.also-like .alsoLike .also-contain::after {
   content: "";
   position: absolute;
   background-color: #e69802;
@@ -1076,7 +1076,7 @@ sc {
   width: 0;
   transition: 0.5s;
 }
-.also-like .alsoLike .contain::before {
+.also-like .alsoLike .also-contain::before {
   content: "";
   position: absolute;
   background-color: #e69802;
@@ -1086,30 +1086,30 @@ sc {
   width: 0;
   transition: 0.5s;
 }
-.also-like .alsoLike .contain:hover {
+.also-like .alsoLike .also-contain:hover {
   transform: translateY(-10px);
 }
-.also-like .alsoLike .contain:hover::after {
+.also-like .alsoLike .also-contain:hover::after {
   height: 100%;
   width: 2px;
 }
-.also-like .alsoLike .contain:hover::before {
+.also-like .alsoLike .also-contain:hover::before {
   height: 100%;
   width: 2px;
 }
-.also-like .alsoLike .contain .image {
+.also-like .alsoLike .also-contain .image {
   max-width: 100%;
 }
-.also-like .alsoLike .contain .image img {
+.also-like .alsoLike .also-contain .image img {
   width: 270px;
   height: 202.5px;
 }
-.also-like .alsoLike .contain .text h2 {
+.also-like .alsoLike .also-contain .text h2 {
   margin-top: 10px;
   font-size: 15px;
   text-transform: capitalize;
 }
-.also-like .alsoLike .contain .text .buy {
+.also-like .alsoLike .also-contain .text .buy {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
@@ -1120,7 +1120,7 @@ sc {
   flex-direction: row;
   gap: 0;
 }
-.also-like .alsoLike .contain .text .buy button {
+.also-like .alsoLike .also-contain .text .buy button {
   border-radius: 10px;
   padding: 3px 12px;
   color: #fff;

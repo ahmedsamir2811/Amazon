@@ -1,5 +1,5 @@
 
-fetch('https://api.escuelajs.co/api/v1/products?offset=40&limit=40')
+fetch('https://api.escuelajs.co/api/v1/products?offset=20&limit=40')
     .then(res => res.json())
     .then(api=> {
         api.forEach(el => {

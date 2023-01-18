@@ -18,7 +18,7 @@ lastView.forEach((el, i) => {
 // use api of last viewed component
 
 
-fetch('https://api.escuelajs.co/api/v1/products?offset=15&limit=35')
+fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=20')
     .then(res => res.json())
     .then(data => {
         data.forEach(el => {
