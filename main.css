@@ -75,7 +75,7 @@ a {
   z-index: 5;
 }
 
-.lastViewed .arrows i {
+.also-like .arrows i, .lastViewed .arrows i {
   box-shadow: 0px 0px 10px -3px rgb(0, 0, 0);
   cursor: pointer;
   font-size: 20px;
@@ -86,7 +86,7 @@ a {
   background-color: #343434;
   transition: 0.5s;
 }
-.lastViewed .arrows i:hover {
+.also-like .arrows i:hover, .lastViewed .arrows i:hover {
   background-color: rgba(63, 63, 63, 0.5254901961);
   transform: translateX(-10px);
 }
@@ -1014,19 +1014,35 @@ sc {
 
 .also-like {
   background-color: #1d1d1d;
+  color: #fff;
+  margin-top: 5px;
   margin-bottom: 5px;
+  position: relative;
   box-shadow: 0px 3px 33px 5px rgba(0, 0, 0, 0.75);
-}
-.also-like h3 {
-  padding-left: 10px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  color: #e69802;
 }
 .also-like .container {
   max-width: 1445px;
 }
-.also-like .alsolike {
+.also-like .arrows {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  z-index: 5;
+}
+.also-like h3 {
+  text-transform: capitalize;
+  color: #e69802;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+.also-like .alsoLike {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1035,10 +1051,10 @@ sc {
   overflow-x: auto;
   scroll-behavior: smooth;
 }
-.also-like .alsolike::-webkit-scrollbar {
+.also-like .alsoLike::-webkit-scrollbar {
   display: none;
 }
-.also-like .alsolike .contain {
+.also-like .alsoLike .contain {
   box-shadow: 0px 0px 10px -3px rgb(0, 0, 0);
   text-align: center;
   border-radius: 5px;
@@ -1050,7 +1066,7 @@ sc {
   transition: 0.3s;
   cursor: pointer;
 }
-.also-like .alsolike .contain::after {
+.also-like .alsoLike .contain::after {
   content: "";
   position: absolute;
   background-color: #e69802;
@@ -1060,7 +1076,7 @@ sc {
   width: 0;
   transition: 0.5s;
 }
-.also-like .alsolike .contain::before {
+.also-like .alsoLike .contain::before {
   content: "";
   position: absolute;
   background-color: #e69802;
@@ -1070,31 +1086,30 @@ sc {
   width: 0;
   transition: 0.5s;
 }
-.also-like .alsolike .contain:hover {
+.also-like .alsoLike .contain:hover {
   transform: translateY(-10px);
 }
-.also-like .alsolike .contain:hover::after {
+.also-like .alsoLike .contain:hover::after {
   height: 100%;
   width: 2px;
 }
-.also-like .alsolike .contain:hover::before {
+.also-like .alsoLike .contain:hover::before {
   height: 100%;
   width: 2px;
 }
-.also-like .alsolike .contain .image {
+.also-like .alsoLike .contain .image {
   max-width: 100%;
 }
-.also-like .alsolike .contain .image img {
+.also-like .alsoLike .contain .image img {
   width: 270px;
   height: 202.5px;
 }
-.also-like .alsolike .contain .text h2 {
+.also-like .alsoLike .contain .text h2 {
   margin-top: 10px;
   font-size: 15px;
   text-transform: capitalize;
-  color: #fff;
 }
-.also-like .alsolike .contain .text .buy {
+.also-like .alsoLike .contain .text .buy {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
@@ -1105,10 +1120,7 @@ sc {
   flex-direction: row;
   gap: 0;
 }
-.also-like .alsolike .contain .text .buy .price {
-  color: #fff;
-}
-.also-like .alsolike .contain .text .buy button {
+.also-like .alsoLike .contain .text .buy button {
   border-radius: 10px;
   padding: 3px 12px;
   color: #fff;
@@ -1432,7 +1444,6 @@ button:disabled {
 .footerr {
   height: 5rem;
   background-color: #343434;
-  margin-top: 10px;
   box-shadow: 0px 3px 33px 5px rgba(0, 0, 0, 0.75);
 }
 .footerr .container {

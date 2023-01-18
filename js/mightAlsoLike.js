@@ -8,7 +8,7 @@ fetch('https://api.escuelajs.co/api/v1/products?offset=30&limit=50')
     }).catch(err => console.log('Your Api Is Wrong'))
 
 const alsoLikeData = (data) => {
-    const alsoLike = document.getElementById("alsolike")
+    const alsoLike = document.getElementById("alsoLike")
     alsoLike.innerHTML += `
         <div class="contain">
             <div class="image">
@@ -25,3 +25,4 @@ const alsoLikeData = (data) => {
     `
     storeThree()
 }
+

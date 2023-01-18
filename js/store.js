@@ -454,7 +454,7 @@ const storeThree = () => {
             updateTotalPrice()
 
             const nameOfDeletedProduct = eo.target.parentElement.getElementsByClassName("product-name")[0].innerText
-            const allCardsInGallary = document.querySelectorAll(".must-for-you")
+            const allCardsInGallary = document.querySelectorAll(".alsolike")
 
             allCardsInGallary.forEach(item => {
                 const nameOfProductInGalary = item.getElementsByClassName("card-title")[0].innerText
@@ -482,7 +482,8 @@ const storeThree = () => {
         item.addEventListener('click', (eo) => {
 
     {         //change buy to done
-
+        const alsoLike = document.querySelector(".alsolike");
+        alsoLike.style.pointer-events("all");
         item.setAttribute("disabled", "")
         item.classList.remove("btn-warning")
         item.classList.add("btn-secondary")
