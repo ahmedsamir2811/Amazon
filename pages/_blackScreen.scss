@@ -8,7 +8,7 @@
   bottom: 0;
   background-color: $third-color;
   z-index: 50;
-  // transform: translateX(150%);
+  transform: translateX(150%);
   transition: 0.7s;
   overflow-y:scroll;
   &::-webkit-scrollbar{
