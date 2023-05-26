@@ -257,6 +257,7 @@ a {
   bottom: 0;
   background-color: #343434;
   z-index: 50;
+  transform: translateX(150%);
   transition: 0.7s;
   overflow-y: scroll;
 }
